@@ -1,0 +1,42 @@
+{% extends "admin/inicio-admin.html" %} {% block content %}
+
+<div class="cuadro-proyectos">
+  <h1>Agregar Proyectos</h1>
+  <div class="adminproyectos">
+    <form method="POST" action="/Admin_proyectos">
+      <label for="titulo">Título del Proyecto:</label><br />
+      <input type="text" id="titulo" name="titulo" required /><br /><br />
+      <label for="descripcion">Descripción:</label><br />
+      <textarea id="descripcion" name="descripcionproyecto" rows="6" cols="60"
+        placeholder="Describe brevemente tu proyecto..." required></textarea>
+      <br /><br />
+      <input type="text" name="svgproyecto" placeholder="URL del SVG" autocomplete="off" required />
+      <input type="text" name="link" placeholder="URL PROYECTO" autocomplete="off" required />
+      <input type="submit" value="Agregar Proyecto" />
+    </form>
+  </div>
+</div>
+
+<div>
+  <h1 class="texto-habilidades">PROYECTOS</h1>
+
+  <div class="proyectos">
+    {% for proyecto in proyectos %}
+    <div class="proyecto">
+      <h2>{{ proyecto.Nombre }}</h2>
+      <p>{{ proyecto.Descripcion }}</p>
+      <div>{{ proyecto.Svg | safe }}</div>
+      <small>{{ proyecto.fecha_creacion }}</small>
+      <form action="/eliminar_proyecto" method="POST" style="margin-top: 15px">
+        <input type="hidden" name="id" value="{{ proyecto.id }}" />
+        <button type="submit" class="btn-cerrar-sesion">Eliminar</button>
+      </form>
+      <div class="modificar_boton">
+        <a href="{{ url_for('modificarp') }}?id={{ proyecto.id }}"><button
+            class="btn-cerrar-sesion">Modificar</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{%endblock%}

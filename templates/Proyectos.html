@@ -1,0 +1,20 @@
+{%extends "inicio.html" %} {% block content %}
+
+<h1 class="texto-habilidades">PROYECTOS</h1>
+
+<div class="proyectos">
+  {% for proyecto in Mproyectos %}
+  <div class="proyecto">
+    <h2>{{ proyecto.Nombre }}</h2>
+    <p>{{ proyecto.Descripcion }}</p>
+    <div class="icono">{{ proyecto.Svg | safe }}</div>
+    <small>{{ proyecto.fecha_creacion }}</small>
+    <br />
+    <a href="{{ proyecto.Link }}" target="_blank" class="btn-link"
+      >Ver proyecto</a
+    >
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

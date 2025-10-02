@@ -1,0 +1,31 @@
+{% extends "admin/inicio-admin.html" %}
+{% block content %}
+
+<div class="Comentarios">
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Teléfono</th>
+            <th>Mensaje</th>
+            <th>Fecha</th>
+            <th>Eliminar</th>
+        </tr>
+        {% for mensaje in mensajes %}
+        <tr>
+            <td>{{ mensaje.Nombre }}</td>
+            <td>{{ mensaje.Correo }}</td>
+            <td>{{ mensaje.Telefono }}</td>
+            <td>{{ mensaje.Mensaje }}</td>
+            <td>{{ mensaje.Fecha }}</td>
+            <td>
+                <form action="/eliminar_comentario" method="POST">
+                    <input type="hidden" name="id" value="{{ mensaje.id }}" />
+                    <button type="submit" class="btn-cerrar-sesion">Eliminar</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

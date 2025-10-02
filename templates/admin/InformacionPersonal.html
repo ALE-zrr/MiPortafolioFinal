@@ -1,0 +1,29 @@
+{% extends "admin/inicio-admin.html" %}
+{% block content %}
+
+<h1 class="Titulo-info">MODIFICAR</h1>
+
+<div>
+    {% if h %}
+    <div class="cuadro-habilidades">
+        <div class="habilidades">
+            <form action="{{ url_for('Informacion') }}" method="POST">
+                <input type="hidden" name="id" value="{{ h.id }}">
+                <textarea  name="Perfil">{{ h.Perfil }}</textarea>
+                <textarea name="PerfilPro">{{ h.PerfilPro }}</textarea>
+                <textarea name="XP">{{h.XP}}</textarea>
+                <input type="text" name="fechaNac" value="{{ h.fecha_nacimiento }}">
+                <button type="submit" class="btn-cerrar-sesion">Guardar</button>
+            </form>
+        </div>
+    </div>
+    {% else %}
+    <p>No hay habilidades registradas.</p>
+    {% endif %}
+</div>
+
+
+
+
+
+{%endblock %}

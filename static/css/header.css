@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    background-color: black;
+    z-index: 10;
+    background-color: transparent;
+}
+
+nav {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    margin-left: -100px;
+}
+
+.header ul {
+    position: relative;
+    display: flex;
+    margin-left: 300px;
+}
+
+.header ul li {
+    list-style: none;
+}
+
+.header ul li a {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffd36b;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #f5c542;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: start;
+}
+
+.header.abajo {
+    background-color: black
+}
+
+
+
+
+
+
+.admin_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    transition: 0.7s;
+    padding: 30px 20px;
+    background-color: black;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.admin_header.abajo {
+    background-color: black
+}
+
+
+
+
+
+
+.iniciarsesion-cuenta {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+
+
+
+.navbar2 {
+
+    display: end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: #2b2b2b;
+    color: #fff;
+    padding: 20px;
+    box-shadow: -2px 0 12px rgba(0, 0, 0, 0.35);
+    transition: right 0.3s ease-in-out;
+    z-index: 2000;
+    overflow-y: auto;
+    animation: moverYColorear 1s;
+}
+
+@keyframes moverYColorear {
+    0% {
+        background-color: #2b2b2b;
+        transform: translateX(100%);
+    }
+
+    100% {
+        background-color: #2b2b2b;
+        transform: translateX(0);
+    }
+}
+
+
+
+.no_navbar2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #2b2b2b;
+    color: #fff;
+    padding: 20px;
+    box-shadow: -2px 0 12px rgba(0, 0, 0, 0.35);
+    transition: right 0.3s ease-in-out;
+    z-index: 2000;
+    overflow-y: auto;
+    animation: moverYColorear2 2s;
+}
+
+@keyframes moverYColorear2 {
+    0% {
+        background-color: #2b2b2b;
+        transform: translateX(0);
+    }
+
+    100% {
+        background-color: #2b2b2b;
+        transform: translateX(100%);
+    }
+}
+
+
+.Ordenbarrahorizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.cerrarsesion {
+    margin-top: 350px;
+}
+
+.Ordenbarrahorizontal nav ul,
+.cerrarsesion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    font-size: 25px;
+}
+
+.Ordenbarrahorizontal a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #ffd36b;
+    border-radius: 8px;
+}
+
+.Ordenbarrahorizontal a:hover {
+    background: rgba(250, 204, 21, .15);
+}
+
+.btnMenu2 {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 3000;
+}

@@ -1,0 +1,72 @@
+<div class="btn_Menu">
+  <button id="btnMenu">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+    </svg>
+  </button>
+</div>
+
+<div>
+  <div class="admin_header">
+    <div class="no_navbar" id="navbar">
+      {% if not login %}
+      <h1 class="logo">FLUFFYDRAGONS</h1>
+      {% endif %}
+
+
+      <div>
+        <button class="btnMenu2" id="btnMenu2">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
+              <path fill="#ffd36b" d="M1 3v2h18V3zm0 8h18V9H1zm0 6h18v-2H1z" />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="no_navbar2" id="navbar2">
+      <div class="Ordenbarrahorizontal">
+        <nav>
+          <ul>
+            {%if not index%}
+            <li><a href="/" class="">Inicio</a></li>
+            {%endif%}
+            {%if not admin%}
+            <div>
+              <li><a href="/admin" class="">Admin</a></li>
+            </div>
+            {%endif%} {% if not adminproyectos %}
+            <li>
+              <a href="/Admin_proyectos" class="">Proyectos</a>
+            </li>
+            {% endif %} {% if not comentarios %}
+            <li>
+              <a href="comentarios" class="">Comentarios</a>
+            </li>
+            {% endif %} {% if not skills %}
+            <li>
+              <a href="skills" class="">Habilidades</a>
+            </li>
+            {% endif %}{% if not modip %}
+            <li>
+              <a href="Informacion_personal" class="">Info-Personal</a>
+            </li>
+            {% endif %}
+
+            <div class="cerrarsesion">
+              <p class="iniciarsesion-cuenta"> HOLA!, {{ session['usuario'] }}</p>
+              <form action="{{ url_for('logout') }}" method="GET">
+                <button type="submit" class="btn-cerrar-sesion">
+                  <p class="">Cerrar sesión</p>
+                </button>
+              </form>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

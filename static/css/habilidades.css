@@ -1,0 +1,178 @@
+
+
+.columnas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 50px;
+  padding: 30px;
+}
+.cuadro-habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  margin-top: 100px;
+  padding: 25px;
+  width: 350px;
+  border: 2px solid #f5c542;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.cuadro-habilidades h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f5c542;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cuadro-habilidades form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cuadro-habilidades input[type="text"] {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.cuadro-habilidades textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 14px;
+  border: 2px solid #f5c542;          
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.5;
+  outline: none;
+  resize: vertical;                   
+  max-height: 60vh;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  transition: border-color .2s, box-shadow .2s, background-color .2s;
+}
+
+.cuadro-habilidades input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cuadro-habilidades .REGISTRAR {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, #b8860b, #ffd700);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(184, 134, 11, 0.4);
+}
+
+.cuadro-habilidades .REGISTRAR:hover {
+  background: linear-gradient(135deg, #ffd700, #daa520);
+  transform: translateY(-2px);
+}
+.titulo_habilidad {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffd36b;
+  text-align: center;
+}
+
+.svg_habilidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffd36b;
+}
+
+.REGISTRAR:hover {
+  background: linear-gradient(135deg, #ffd700, #daa520);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(218, 165, 32, 0.6);
+}
+
+.REGISTRAR:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(184, 134, 11, 0.4);
+}
+
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffd700;
+}
+
+.habilidades h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffd700;
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+.habilidades form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.habilidades input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ffd700;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 0.95rem;
+    width: 220px;
+    transition: all 0.3s ease;
+}
+
+.habilidades input[type="text"]:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0px 0px 10px #ffcc00;
+}
+
+.habilidades input[type="submit"] {
+    background: linear-gradient(90deg, #ffcc00, #ff9900);
+    border: none;
+    padding: 12px 18px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.habilidades input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.6);
+}
+
+
+.modificar_boton{
+  margin: 0;
+  margin-top: 20px;
+}

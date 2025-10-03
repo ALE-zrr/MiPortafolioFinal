@@ -1,5 +1,3 @@
-
-
 .columnas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -7,6 +5,7 @@
   margin: 50px;
   padding: 30px;
 }
+
 .cuadro-habilidades {
   display: flex;
   flex-direction: column;
@@ -50,16 +49,16 @@
   width: 100%;
   min-height: 120px;
   padding: 12px 14px;
-  border: 2px solid #f5c542;          
+  border: 2px solid #f5c542;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   font-size: 14px;
   line-height: 1.5;
   outline: none;
-  resize: vertical;                   
+  resize: vertical;
   max-height: 60vh;
-  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
   transition: border-color .2s, box-shadow .2s, background-color .2s;
 }
 
@@ -84,6 +83,7 @@
   background: linear-gradient(135deg, #ffd700, #daa520);
   transform: translateY(-2px);
 }
+
 .titulo_habilidad {
   font-size: 30px;
   font-family: "Times New Roman", Times, serif;
@@ -112,73 +112,74 @@
 
 
 .habilidades {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffd700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffd700;
 }
 
 .habilidades h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #ffd700;
-    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffd700;
+  text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
 }
 
 .habilidades form {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .habilidades input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ffd700;
-    border-radius: 8px;
-    background: #1a1a1a;
-    color: #fff;
-    font-size: 0.95rem;
-    width: 220px;
-    transition: all 0.3s ease;
+  padding: 10px;
+  border: 1px solid #ffd700;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.95rem;
+  width: 220px;
+  transition: all 0.3s ease;
 }
 
 .habilidades input[type="text"]:focus {
-    outline: none;
-    border-color: #ffcc00;
-    box-shadow: 0px 0px 10px #ffcc00;
+  outline: none;
+  border-color: #ffcc00;
+  box-shadow: 0px 0px 10px #ffcc00;
 }
 
 .habilidades input[type="submit"] {
-    background: linear-gradient(90deg, #ffcc00, #ff9900);
-    border: none;
-    padding: 12px 18px;
-    color: #000;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  border: none;
+  padding: 12px 18px;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .habilidades input[type="submit"]:hover {
-    transform: translateY(-2px);
-    box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.6);
 }
 
 
-.modificar_boton{
+.modificar_boton {
   margin: 0;
   margin-top: 20px;
 }
 
 
 @media (max-width: 768px) {
+
   header h1,
   .logo,
   .brand,
@@ -215,18 +216,27 @@
     gap: 10px;
   }
 
+  .descripcion_habilidad {
+    max-width: 400px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+
+  }
+
   .Comentarios {
     width: 95%;
     margin: 100px auto 160px auto;
   }
 
-  .Titulo-admin{
+  .Titulo-admin {
     margin: 140px 16px 16px 16px;
     font-size: clamp(24px, 5vw, 32px);
   }
 }
 
 @media (max-width: 480px) {
+
   header h1,
   .logo,
   .brand {
@@ -257,7 +267,9 @@
     width: 100%;
   }
 
-  .Comentarios th { display: none; }
+  .Comentarios th {
+    display: none;
+  }
 
   .Comentarios tr {
     margin-bottom: 14px;
@@ -281,7 +293,3 @@
     margin-right: 10px;
   }
 }
-
-
-
-

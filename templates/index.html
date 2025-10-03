@@ -66,8 +66,10 @@
         <div class="cuadro_columnas">
           <h2 class="titulo_habilidad">{{ h.Nombre }}</h2>
           <br />
+          <div>
           <p class="descripcion_habilidad">{{ h.Descripcion }}</p>
           <br />
+          </div>
           <div class="svg_habilidad">{{ h.Svg|safe }}</div>
         </div>
         {% endfor %}

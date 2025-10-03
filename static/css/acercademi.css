@@ -56,3 +56,57 @@
   font-size: 50px;
   color: #ffd36b;
 }
+
+@media (max-width: 767px) {
+  .Contenedor_acerca {
+    width: 92%;
+    padding: 20px;
+  }
+  .Imagen_perfil {
+    aspect-ratio: 4 / 3;
+    max-height: 60vh;
+  }
+  .PERFIL_CONTENIDO {
+    width: 100%;
+    padding: 16px;
+  }
+  .HOLA {
+    font-size: clamp(48px, 10vw, 100px);
+  }
+  .PERFILES {
+    font-size: clamp(24px, 6vw, 50px);
+  }
+  .contenedor-sobremi {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Contenedor_acerca {
+    flex-direction: row;
+    text-align: left;
+    align-items: stretch;
+    gap: 28px;
+  }
+  .Imagen_perfil {
+    width: 90%;
+    height: 300px;
+    aspect-ratio: 3 / 4;
+    max-height: none;
+  }
+  .PERFIL_CONTENIDO {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Contenedor_acerca {
+    width: 85%;
+  }
+  .HOLA {
+    font-size: clamp(72px, 6vw, 100px);
+  }
+  .PERFILES {
+    font-size: clamp(36px, 3vw, 50px);
+  }
+}

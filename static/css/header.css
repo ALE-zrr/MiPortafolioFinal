@@ -203,3 +203,45 @@ nav {
     right: 16px;
     z-index: 3000;
 }
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;   /* apila elementos en columna */
+    align-items: center;      /* centra los elementos */
+    padding: 16px;
+    background-color: rgba(0,0,0,.9);
+    z-index: 4000;
+  }
+
+  .header ul {
+    display: flex !important; /* aseguramos que el menú se muestre */
+    flex-direction: column;   /* menú en columna */
+    margin-left: 0;
+    gap: 12px;
+  }
+
+  nav {
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 32px;
+    margin-bottom: 10px;      /* separa logo del menú */
+  }
+
+  .header ul li a {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 26px;
+  }
+  .header ul li a {
+    font-size: 16px;
+  }
+}

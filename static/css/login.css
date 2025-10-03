@@ -93,3 +93,39 @@
 }
 
 
+@media (max-width: 1200px) {
+  .iniciar { font-size: 72px; margin-left: 120px; }
+  .sesion { font-size: 48px; left: 260px; }
+  .Login { margin-right: 120px; }
+}
+
+@media (max-width: 992px) {
+  .Columnalogin { grid-template-columns: 1fr; gap: 20px; }
+  .iniciar { font-size: 64px; margin-left: 0; text-align: center; }
+  .sesion { position: static; left: auto; margin: -10px auto 0 auto; text-align: center; }
+  .decoracioninicio { justify-content: center; }
+  .logo-login { margin-left: 0; }
+  .Login { margin: 40px auto 100px auto; margin-top: 140px; margin-bottom: 100px; margin-left: auto; margin-right: auto; width: min(92%, 560px); }
+}
+
+@media (max-width: 768px) {
+  .iniciar { font-size: 48px; margin-top: 140px; }
+  .sesion { font-size: 36px; margin-top: -8px; }
+  .textologin { font-size: 26px; text-align: center; }
+  .campologin { padding: 12px; }
+  .usuario-panel { margin-left: 0; width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .Columnalogin { margin: 16px; }
+  .iniciar { font-size: 38px; margin-top: 120px; }
+  .sesion { font-size: 28px; }
+  .Login { width: 100%; padding: 16px; margin-top: 120px; margin-bottom: 80px; }
+  .textologin { font-size: 22px; }
+}
+
+
+
+
+
+

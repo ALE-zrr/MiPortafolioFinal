@@ -176,3 +176,112 @@
   margin: 0;
   margin-top: 20px;
 }
+
+
+@media (max-width: 768px) {
+  header h1,
+  .logo,
+  .brand,
+  .titulo_habilidad {
+    font-size: clamp(28px, 8vw, 42px);
+    line-height: 1.05;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .columnas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0;
+    padding: 16px;
+  }
+
+  .cuadro-habilidades {
+    width: 100%;
+    max-width: 350px;
+    margin: 16px auto;
+    padding: 16px;
+  }
+
+  .cuadro-habilidades input[type="text"],
+  .cuadro-habilidades textarea,
+  .cuadro-habilidades .REGISTRAR,
+  .habilidades input[type="text"],
+  .habilidades input[type="submit"] {
+    width: 100%;
+  }
+
+  .habilidades form {
+    gap: 10px;
+  }
+
+  .Comentarios {
+    width: 95%;
+    margin: 100px auto 160px auto;
+  }
+
+  .Titulo-admin{
+    margin: 140px 16px 16px 16px;
+    font-size: clamp(24px, 5vw, 32px);
+  }
+}
+
+@media (max-width: 480px) {
+  header h1,
+  .logo,
+  .brand {
+    font-size: clamp(22px, 9vw, 34px);
+  }
+
+  .cuadro-habilidades h1 {
+    font-size: 22px;
+  }
+
+  .titulo_habilidad {
+    font-size: 20px;
+  }
+
+  .cuadro-habilidades .REGISTRAR,
+  .habilidades input[type="submit"] {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+
+  .Comentarios table,
+  .Comentarios thead,
+  .Comentarios tbody,
+  .Comentarios th,
+  .Comentarios td,
+  .Comentarios tr {
+    display: block;
+    width: 100%;
+  }
+
+  .Comentarios th { display: none; }
+
+  .Comentarios tr {
+    margin-bottom: 14px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .Comentarios td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .Comentarios td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #a67c00;
+    margin-right: 10px;
+  }
+}
+
+
+
+

@@ -55,3 +55,122 @@
 .Comentarios tr:first-child th:last-child {
     border-top-right-radius: 8px;
 }
+
+.Comentarios {
+    width: 90%;
+    margin-top: 200px;
+    margin-left: 60px;
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    margin-bottom: 380px;
+}
+
+.Comentarios table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.Comentarios th {
+    background-color: #a67c00; 
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #8c6a00;
+}
+
+.Comentarios td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+.Comentarios tr:nth-child(even) {
+    background-color: #fff8e1; 
+}
+
+.Comentarios tr:hover {
+    background-color: #ffe082; 
+    cursor: pointer;
+}
+
+.Comentarios td {
+    color: #4a4a4a;
+}
+
+.Comentarios tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.Comentarios tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .Comentarios {
+        width: 95%;
+        margin: 100px auto 200px auto;
+    }
+
+    .Comentarios th,
+    .Comentarios td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Comentarios {
+        width: 100%;
+        margin: 80px auto 150px auto;
+    }
+
+    .Comentarios table, 
+    .Comentarios thead, 
+    .Comentarios tbody, 
+    .Comentarios th, 
+    .Comentarios td, 
+    .Comentarios tr {
+        display: block;
+        width: 100%;
+    }
+
+    .Comentarios tr {
+        margin-bottom: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .Comentarios th {
+        display: none;
+    }
+
+    .Comentarios td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        font-size: 13px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .Comentarios td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #a67c00;
+        margin-right: 10px;
+    }
+}
+
+
+
+
+
+

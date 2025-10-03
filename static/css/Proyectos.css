@@ -169,10 +169,47 @@
   box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.6);
 }
 .icono {
-  background-color: #ff9900;
   width: 200px; /* ancho de tu imagen */
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 1200px) {
+  .proyectos { grid-template-columns: repeat(2, 1fr); }
+  .ImagenProyectos { width: 100%; height: auto; max-height: 320px; }
+  .cuadro-proyectos { margin: 100px 80px; }
+}
+
+@media (max-width: 992px) {
+  .ColumnasProyectos { grid-template-columns: 1fr; margin: 20px; padding: 10px; }
+  .cadaProyecto { margin: 16px; }
+  .proyectos { grid-template-columns: repeat(2, 1fr); gap: 16px; padding: 16px; }
+  .cuadro-proyectos { margin: 80px 24px; }
+  .adminproyectos form { width: min(92%, 560px); }
+}
+
+@media (max-width: 768px) {
+  .proyectos { grid-template-columns: 1fr; gap: 16px; padding: 16px; }
+  .ImagenProyectos { width: 100%; height: auto; max-height: 280px; }
+  .cuadro-proyectos { margin: 60px 16px; padding: 16px; }
+  .adminproyectos { padding: 0 16px; }
+  .adminproyectos h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 480px) {
+  .ColumnasProyectos { margin: 12px; padding: 8px; }
+  .cadaProyecto { padding: 12px; margin: 12px; }
+  .proyecto h2 { font-size: 1.1rem; }
+  .proyecto p { font-size: 0.9rem; }
+  .cuadro-proyectos { margin: 40px 12px; }
+  .adminproyectos form { padding: 20px; }
+  .icono { width: 140px; height: 140px; }
+}
+
+
+
+
+
+

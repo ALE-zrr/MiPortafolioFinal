@@ -217,7 +217,6 @@
   }
 
   .descripcion_habilidad {
-    max-width: 400px;
     overflow-wrap: anywhere;
     word-break: break-word;
     hyphens: auto;

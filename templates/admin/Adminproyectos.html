@@ -1,5 +1,21 @@
 {% extends "admin/inicio-admin.html" %} {% block content %}
 
+<button type="button" class="btn-regresar" onclick="goBack()">← Regresar</button>
+<script>
+  function goBack(){
+    const fallback = "{{ url_for('admin.dashboard') }}";
+    if (document.referrer && document.referrer.startsWith(location.origin)){
+      history.back();
+    } else {
+      location.href = fallback;
+    }
+  }
+</script>
+
+
+
+
+
 <div class="cuadro-proyectos">
   <h1>Agregar Proyectos</h1>
   <div class="adminproyectos">

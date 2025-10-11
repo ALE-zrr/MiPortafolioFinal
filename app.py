@@ -1,3 +1,6 @@
+
+
+
 from flask import Flask, render_template, request, redirect, session, url_for, jsonify
 from functools import wraps
 from random import sample
@@ -93,7 +96,7 @@ def login():
         row = query_one("SELECT * FROM usuarios WHERE usuario = %s AND password = %s", (usuario, password))
         if row:
             session["usuario"] = row["usuario"]
-            return render_template('admin/admin.html', Login=True)
+            return redirect('/admin')
         else:
             mensaje = "Usuario o contraseña incorrecta"
 
@@ -255,4 +258,4 @@ def Informacion():
 
 # Ejecutar la app
 if __name__ == '__main__':
-    app.run(host="127.0.0.1", port=7000, debug=True)
+    app.run(host="127.0.0.1", port=7777, debug=True)
